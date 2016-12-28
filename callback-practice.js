@@ -65,11 +65,12 @@ last(names, function(lastName){
 
   //Code Here for multiply
 var multiply = function(num1, num2, cb) {
-  cb (num1 * num2);
+var sum = num1 * num2;
+  return cb(sum);
 };
 multiply(4, 3, function(answer){
   console.log('The answer is ' + answer); //should console.log 12
-})
+});
 
 
 
@@ -82,11 +83,22 @@ multiply(4, 3, function(answer){
 
 
   //Code Here for contains
+var contains = function(arr, name, cb) {
+  var result = false;
+  for (var i = 0; i < arr.length; i++) {
+    if(arr[i] === name) {
+      result = true;
+    }
+  }
+  return cb(result);
+};
 
-contains(names, 'Colt', function(result){
-  if(result === true){
+var names = ['David', 'Jim', 'Piper', 'Kelly', 'Colt', 'Bill'];
+contains(names, 'Colt', function(result) {
+  if(result === true) {
     console.log('Colt is in the array');
-  } else {
+  }
+  else {
     console.log('Colt is not in the array');
   }
 });
