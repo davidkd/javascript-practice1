@@ -138,7 +138,16 @@ uniq(names, function(uniqArr){
 
 
     //Code Here for each
-
+var index;
+var name;
+var each = function(arr, cb){
+  for(var i = 0; i < arr.length; i++){
+    index = i;
+    name = arr[i];
+    cb(name, index);
+  }
+};
+var names = ['Jake', 'David', 'Eric'];
 each(names, function(item, indice){
   console.log('The item in the ' + indice + ' position is ' + item)
 });
