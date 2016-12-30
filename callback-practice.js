@@ -168,7 +168,7 @@ var getUserById = function(arr, trg, cb) {
    if (arr[i].id === trg) {
   	  cb(arr[i]);
   	}
- }
+  }
 };
 
 var users = [
