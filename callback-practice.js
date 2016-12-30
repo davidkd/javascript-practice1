@@ -163,7 +163,13 @@ each(names, function(item, indice){
 
 
  //code here for getUserById
-
+var getUserById = function(arr, trg, cb) {
+ for (var i = 0; i < arr.length; i++) {
+   if (arr[i].id === trg) {
+  	  cb(arr[i]);
+  	}
+ }
+};
 var users = [
   {
     id: '12d',
