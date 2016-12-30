@@ -170,6 +170,7 @@ var getUserById = function(arr, trg, cb) {
   	}
  }
 };
+
 var users = [
   {
     id: '12d',
