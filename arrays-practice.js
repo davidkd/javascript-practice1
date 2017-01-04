@@ -18,6 +18,9 @@ var arr = [40,50,60];
 
 
   //Code Here
+var last = function(arr){
+  return arr.pop();
+};
 
 
 //Next Problem
