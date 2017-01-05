@@ -93,6 +93,22 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
   //Code Here
+var divider = function(nums){
+  var evens = [];
+  var odds = [];
+  var dividedArray = [];
+  for (var i = 0; i < nums.length; i++){
+    if (nums[i] % 2 === 0){
+      evens.push(nums[i]);
+    }
+    else {
+      odds.push(nums[i]);
+    }
+  }
+  dividedArray.push(evens, odds);
+  return dividedArray;
+};
+
 
 
 //Next Problem
