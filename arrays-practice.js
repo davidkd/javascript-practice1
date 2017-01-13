@@ -143,7 +143,7 @@ var str = 'this is my sentence';
 //Write a function called reverse that takes a given str as it's only argument and returns that string after it's been reversed
 
   //Code Here
-
+str = 'hi';
 
 //Next Problem
 
